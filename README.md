@@ -21,7 +21,7 @@ Currently, a user has to purchase a blockchain’s native currency or currencies
 
 ### `Our Solution`
 
-A cross-chain bridge application that allows transfer of tokens between Ethereum and Binance Smart Chain(for now).
+A cross-chain bridge application that allows transfer of tokens between Ethereum and Binance Smartchain(for now).
 
 With smart contracts on both the Ethereum Network and the Binance Smartchain, alongside a user interface in React, users will be able to transfer their tokens from one network to the other.
 
@@ -34,7 +34,7 @@ The Web3JS API will also be used for various functionalities and reasons, mainly
 Asymmetric Encryption verifying the user of transaction and providing non-repudiation.
  - The hashed transaction message is encrypted with the user's private key before decryption with the user's public key to verify data integrity.
  
-Replicated message stream among kafka brokers to reduce DOS possibility.
+Replicated message stream among Kafka brokers to reduce DOS possibility.
 
 Conservation of value in the ecosystem.
  - The number of minted wrapped tokens in circulation is always equal to the amount of native token locked up.
@@ -45,7 +45,7 @@ Cross-chain transfer of assets.
 
 Cross-chain transfer of assets.
  - Users will be able to transfer crypto assets between blockchains and have access to purchasing services across different blockchains.
- - While our solution only supports transactions between Ethereum and Solana, this can be easily extendable to other blockchains such as the Binance Smartchain.
+ - While our solution only supports transactions between Ethereum and Binance Smartchain, this can be easily extendable to other blockchains such as Solana.
  
 Cross-chain payment.
  - Developers building decentralized applications will be able to make use of our solution to conduct cross-chain transactions, expanding their user base to other blockchains. Abstracting the conversion process from the user, the user only has to click the purchase button in the decentralized application.
