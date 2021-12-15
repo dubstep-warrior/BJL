@@ -4,9 +4,9 @@ This project was created for the [Singapore Blockchain Innovation Challenge Hack
 
 ## Group Members:
 
-Kok Bo Jin
-Phan Vu Lan
-Jasper Pang
+ - Kok Bo Jin
+ - Phan Vu Lan
+ - Jasper Pang
 
 ## `Project Overview`
 
@@ -14,7 +14,7 @@ For this hackathon, our team was tasked to develop innovative protocols, framewo
 
 ### `The Problem`
 
-A user holding token A on blockchain A is unable to pay for services on blockchain B using token A. Due to different token protocols, it is difficult for a user to transfer token A to blockchain B.
+A user holding Token A on Blockchain A is unable to pay for services on Blockchain B using Token A. Due to different token protocols, it is difficult for a user to transfer Token A to Blockchain B.
 
 Currently, a user has to purchase a blockchain’s native currency or currencies that use the same protocol as the blockchain to purchase decentralized app services on the same blockchain.
 
