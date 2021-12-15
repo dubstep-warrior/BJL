@@ -1,71 +1,51 @@
-# Getting Started with Create React App
+# Welcome to the Team BJL Repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created for the [Singapore Blockchain Innovation Challenge Hackathon](https://sbic2021.sbip.sg/)
 
-## Available Scripts
+## Group Members:
 
-In the project directory, you can run:
+Kok Bo Jin
+Phan Vu Lan
+Jasper Pang
 
-### `npm start`
+## `Project Overview`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For this hackathon, our team was tasked to develop innovative protocols, frameworks, and use cases for blockchain interoperability, the only requirement was that we needed to have at least 2 different blockchains in our project. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `The Problem`
 
-### `npm test`
+A user holding token A on blockchain A is unable to pay for services on blockchain B using token A. Due to different token protocols, it is difficult for a user to transfer token A to blockchain B.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Currently, a user has to purchase a blockchain’s native currency or currencies that use the same protocol as the blockchain to purchase decentralized app services on the same blockchain.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Our Solution`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A cross-chain bridge application that allows transfer of tokens between Ethereum and Binance Smart Chain(for now).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+With smart contracts on both the Ethereum Network and the Binance Smartchain, alongside a user interface in React, users will be able to transfer their tokens from one network to the other.
 
-### `npm run eject`
+In order to protect this system from nodes with malicious intent, a Kafka cluster will be used to ensure fault tolerance in message drops and a more robust solution.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The Web3JS API will also be used for various functionalities and reasons, mainly convenience.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Features`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Asymmetric Encryption verifying the user of transaction and providing non-repudiation.
+ - The hashed transaction message is encrypted with the user's private key before decryption with the user's public key to verify data integrity.
+ 
+Replicated message stream among kafka brokers to reduce DOS possibility.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Conservation of value in the ecosystem.
+ - The number of minted wrapped tokens in circulation is always equal to the amount of native token locked up.
+ 
+Cross-chain transfer of assets.
 
-## Learn More
+### `Possible Use-Cases`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# BJL" 
+Cross-chain transfer of assets.
+ - Users will be able to transfer crypto assets between blockchains and have access to purchasing services across different blockchains.
+ - While our solution only supports transactions between Ethereum and Solana, this can be easily extendable to other blockchains such as the Binance Smartchain.
+ 
+Cross-chain payment.
+ - Developers building decentralized applications will be able to make use of our solution to conduct cross-chain transactions, expanding their user base to other blockchains. Abstracting the conversion process from the user, the user only has to click the purchase button in the decentralized application.
