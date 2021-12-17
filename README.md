@@ -29,12 +29,10 @@ The Web3JS API will also be used for various functionalities and reasons, mainly
 
 ### `Features`
 
-Full control of the exchange, you can do the exchange yourself or have someone you trust with the ability to do so to host it for you.
+Full control of the exchange, you can host the exchange and do it yourself or have someone you trust with the ability to do so to host it for you.
 
 Conservation of value in the ecosystem.
  - The number of minted wrapped tokens in circulation is always equal to the amount of native token locked up.
-
-Cross-chain transfer of assets.
 
 ### `Possible Use-Cases`
 
