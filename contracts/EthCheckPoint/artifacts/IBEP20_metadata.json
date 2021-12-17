@@ -1,0 +1,150 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"EthCheckPoint/EthBJLToken.sol": "IBEP20"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"EthCheckPoint/EthBJLToken.sol": {
+			"keccak256": "0x5d526af194b989d1952e4cebabd047029ac54d1fd6e5e629c44b9b0e02861e60",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://067044113968067e5f3e9ebd94905d60058fd753a0c949eb12af9dc400ebf2e9",
+				"dweb:/ipfs/QmaTzp2fVpdtK1JH8SVb1SzBsbXPMNNuCCpcrvPU9PU4eY"
+			]
+		},
+		"StringUtils.sol": {
+			"keccak256": "0x4aa0a26fd267e3a3f9806dd5c7dbb2b545f33d7038bbd0a59906d9c00a49135f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21b57cfeb26a87e7419a1f7400c8e72f61ed16f75e775f313c5d55a289eab5c3",
+				"dweb:/ipfs/QmR7yGZ85pV9RLS31NSpp2z3ADFh7iq4gD7mWGU3NsCPy2"
+			]
+		}
+	},
+	"version": 1
+}

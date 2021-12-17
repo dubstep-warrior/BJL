@@ -1,0 +1,251 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_coinType",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_coinTypeName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "foreignAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "recovered",
+						"type": "address"
+					}
+				],
+				"name": "Receive",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "wrapped",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "coinType",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "destination",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_coinType",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_coinTypeName",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_wrapped",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "transferIn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_coinType",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_destination",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "transferOut",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"EthCheckPoint/CrossChainEthPoint.sol": "CCBPoint"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"EthCheckPoint/CrossChainEthPoint.sol": {
+			"keccak256": "0x2e9057d85c3b727a14e477d10e9accd38cddfc9ba15568bc29a86123f60aefe0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d4f980e8c59c97ac5f61d9b2bee870246da99b13918e5c89404e34e2ed8fa74f",
+				"dweb:/ipfs/Qmee46PvoHfMsGMhHK7SUr7SqArFLzTMihuMc79wBgZt8L"
+			]
+		},
+		"EthCheckPoint/EthBJLToken.sol": {
+			"keccak256": "0x64e1a3bacac34a0bdb48b46c05437a295eb02cec9309a28979c07174e565f92e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2dff9d9fb71ba5a587f031ec3340192cc618d67680b5a7480ffae226e889789",
+				"dweb:/ipfs/QmUkGatY9nS6stAr8gDvGXjNyuPghw3vj42os5A11jQZb1"
+			]
+		},
+		"EthCheckPoint/EthTokenPool.sol": {
+			"keccak256": "0x492375c6d59d03d994fa783f901a23915f12a3e0a8e23925400d5a1cc06ec283",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4f24c10af66ad79bbf808586fe6aa9eba3f0d2c469b76b5ba261a5e14e242f9e",
+				"dweb:/ipfs/QmZTzvRdEfa8qPGYaZNroKC9BpFSwur3vic4kLxnwnELAw"
+			]
+		},
+		"StringUtils.sol": {
+			"keccak256": "0x4aa0a26fd267e3a3f9806dd5c7dbb2b545f33d7038bbd0a59906d9c00a49135f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21b57cfeb26a87e7419a1f7400c8e72f61ed16f75e775f313c5d55a289eab5c3",
+				"dweb:/ipfs/QmR7yGZ85pV9RLS31NSpp2z3ADFh7iq4gD7mWGU3NsCPy2"
+			]
+		}
+	},
+	"version": 1
+}

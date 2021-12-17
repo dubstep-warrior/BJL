@@ -8,7 +8,7 @@ import {
 } from "./../src/config/config.js";
 import Web3 from "web3";
 import * as readline from "readline";
- 
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -26,7 +26,7 @@ rl.question("You are the admin, please enter private key: ", (res) => {
 const startListener = (res) => {
   const privKey = res;
   console.log("Valid private key, starting event listener..");
-  let type = types.eth;
+  let type = types.bsc;
 
   let wss = selectWssProvider(type);
   let provider = new Web3.providers.WebsocketProvider(wss);
@@ -50,11 +50,11 @@ const startListener = (res) => {
   console.log("Contract Address: ", contractAddress);
   const contractABI = selectCheckPointABI(type);
 
-  const ethCheckPoint = new web3.eth.Contract(contractABI, contractAddress);
+  const bscCheckPoint = new web3.eth.Contract(contractABI, contractAddress);
 
   //Listen Transfer Events
   console.log("listening...");
-  ethCheckPoint.events.Transfer(
+  bscCheckPoint.events.Transfer(
     {
       fromBlock: "latest",
     },
@@ -65,9 +65,8 @@ const startListener = (res) => {
         console.log("Transfer Event:", txnObj);
         console.log(txnObj.sender, txnObj.wrapped);
 
-       
-
-        callBscReceive(type, txnObj, privKey);
+        
+        callEthReceive(type, txnObj, privKey);
       } else {
         console.log("Error", error);
       }
@@ -75,20 +74,20 @@ const startListener = (res) => {
   );
 };
 
-const callBscReceive = (_from, _txnObj, privKey) => {
-  const type = types.bsc;
+const callEthReceive = (_from, _txnObj, privKey) => {
+  const type = types.eth;
   const provider = selectProvider(type);
   const web3 = new Web3(provider);
   const _privKey = privKey;
 
   const myAccount = web3.eth.accounts.wallet.add(_privKey);
 
-  const bscCheckPointAddress = selectCheckPoint(type);
-  const bscCheckPointABI = selectCheckPointABI(type);
+  const ethCheckPointAddress = selectCheckPoint(type);
+  const ethCheckPointABI = selectCheckPointABI(type);
 
-  const bscCheckPoint = new web3.eth.Contract(
-    bscCheckPointABI,
-    bscCheckPointAddress
+  const ethCheckPoint = new web3.eth.Contract(
+    ethCheckPointABI,
+    ethCheckPointAddress
   );
 
   const txnObj = _txnObj;
@@ -101,7 +100,7 @@ const callBscReceive = (_from, _txnObj, privKey) => {
   );
 
   //string memory _coinTypeName,string memory _coinTypeSymbol,bool _wrapped, address _recipient, uint _amount, bytes memory _signature
-  const data = bscCheckPoint.methods
+  const data = ethCheckPoint.methods
     .transferIn(
       txnObj.sender,
       _coinType,
@@ -116,7 +115,7 @@ const callBscReceive = (_from, _txnObj, privKey) => {
     gas: "8000000",
     gasPrice: web3.utils.toWei("10", "gwei"),
     from: myAccount.address,
-    to: bscCheckPointAddress,
+    to: ethCheckPointAddress,
     data: data,
   };
 

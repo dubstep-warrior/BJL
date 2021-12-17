@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding-top: 300px;
+  padding-top: 50px;
 }
 
 .App-logo {
@@ -51,4 +51,18 @@ button{
   border-radius: 25px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+select {
+  width: 150px;
+  height:40px;
+  font-family:  Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.selectFrom {
+  font-family:  Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
 }

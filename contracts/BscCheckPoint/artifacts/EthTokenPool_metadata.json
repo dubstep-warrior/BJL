@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BscCheckPoint/BscTokenPool.sol": "EthTokenPool"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BscCheckPoint/BscTokenPool.sol": {
+			"keccak256": "0x2528d18435b3b52ad2b3fda3f98a087677dd0dd5475181bf59fd43642e79a727",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bf7d0856d3d8dda6e97466fb05231032994ebcded7243b3e70ab02ee6b7eae15",
+				"dweb:/ipfs/QmSDMGL79wwY9KrrLNYzwm8XcWMfzSss43cc4cxGxF6YXa"
+			]
+		},
+		"EthBJLToken.sol": {
+			"keccak256": "0xe61071e96fa1a6746c7ff373dde3116532fb54a8dd3b44e42da79f38b478479b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://14259f3fe6c2b65b007b61fb3079de7a6f7e6a79654fc754c0bef8b3727af848",
+				"dweb:/ipfs/QmVgGZaxZkhZUVbyBtPR89jeesU6THMZ9ZrRKDE94j7tRr"
+			]
+		},
+		"StringUtils.sol": {
+			"keccak256": "0x4aa0a26fd267e3a3f9806dd5c7dbb2b545f33d7038bbd0a59906d9c00a49135f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21b57cfeb26a87e7419a1f7400c8e72f61ed16f75e775f313c5d55a289eab5c3",
+				"dweb:/ipfs/QmR7yGZ85pV9RLS31NSpp2z3ADFh7iq4gD7mWGU3NsCPy2"
+			]
+		}
+	},
+	"version": 1
+}

@@ -61,9 +61,9 @@ function App() {
 
   window.ethereum.on("chainChanged", chainChangedHandler);
 
-  const approveHandler = async (_coinType, _destination, _amount) => {
+  const approveHandler = async (_coinType, _destination, _amount ,_from) => {
     setSelectedToken(_coinType);
-    if (approveToken(_coinType, _destination, _amount)) {
+    if (approveToken(_coinType, _destination, _amount, _from)) {
       setApproveStatus(true);
     } else {
       setApproveStatus(false);
@@ -75,12 +75,12 @@ function App() {
  
   const [selectedToken, setSelectedToken] = useState("");
   const [approveStatus, setApproveStatus] = useState(false);
-
-  const transferHandler = async (_coinType, _destination, _amount) => {
+ 
+  const transferHandler = async (_coinType, _destination, _amount , _from) => {
     if (selectedToken != _coinType) {
       setSelectedToken(_coinType);
     } else {
-      transferTokens(_coinType, _destination, _amount);
+      transferTokens(_coinType, _destination, _amount, _from);
     }
   };
 
@@ -88,6 +88,10 @@ function App() {
   useEffect(() => {
     setApproveStatus(false);
   }, [selectedToken]);
+
+   
+
+ 
 
 
   return (
@@ -109,8 +113,7 @@ function App() {
             transferToken={transferHandler}
           />
         ) : null}
-        <p>{approveStatus ? approveStatus.toString() : null}</p>
-      </div>
+         </div>
     </div>
   );
 }

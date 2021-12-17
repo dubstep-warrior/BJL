@@ -10,11 +10,11 @@ import {
 
 
 
-export const approveToken = async (_coinType, _destination, _amount) => {
+export const approveToken = async (_coinType, _destination, _amount, _from) => {
   if (window.ethereum.isConnected()) {
     console.log("yes connected", _coinType, _destination, _amount);
 
-    let type = types.eth;
+    let type = _from;
     let provider = selectProvider(type);
     let web3 = new Web3(provider);
     const tokenContractAddress = _coinType;

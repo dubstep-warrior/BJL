@@ -1,0 +1,271 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "CreatedTokenContract",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_coinType",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "foreignAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "recovered",
+						"type": "address"
+					}
+				],
+				"name": "Receive",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "wrapped",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "coinType",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "destination",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_symbol",
+						"type": "string"
+					}
+				],
+				"name": "createTokenContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_coinType",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_wrapped",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "transferIn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_coinType",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_destination",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "transferOut",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"EthCheckPoint/CrossChainEthPoint.sol": "CCEthPoint"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"EthCheckPoint/CrossChainEthPoint.sol": {
+			"keccak256": "0x622bd9a0f1ee0d696900603c5ca6f3453e5d4a643d418c32de81569f662305c8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://14b4dee6a211a096252ce3001ba93036382b59d1969ae77fbb30983611c1cb13",
+				"dweb:/ipfs/QmdrHWjonYRfSSuMyzui1rHXbZUgJNKsNhGJ1qDyoXYjp7"
+			]
+		},
+		"EthCheckPoint/EthBJLToken.sol": {
+			"keccak256": "0xfda53d157255d7e5e509ec47fd992ae1d044402e4c791731dda9c98c6f7bbe4e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a0f01aff92079af84781d87b9ad553404d95dc7d6c19e3d1842f0d5fdc616614",
+				"dweb:/ipfs/QmQtHpAZNr8b2QD8HhC2BFNceBcXJV1VuCpWcxA99aUVut"
+			]
+		},
+		"EthCheckPoint/EthTokenPool.sol": {
+			"keccak256": "0x6729722661477890d9f9c68bbea78ed129b2ee53517b8bc41960ead0a4219029",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0e0e34a36e1cdad73869524149a4653dea8e9218e0f9814aa70168ae4ba54aff",
+				"dweb:/ipfs/QmeAibSopKniUGBCz2BDwbmC9YAshgadYagNhLJk3tN1Hv"
+			]
+		},
+		"StringUtils.sol": {
+			"keccak256": "0x4aa0a26fd267e3a3f9806dd5c7dbb2b545f33d7038bbd0a59906d9c00a49135f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21b57cfeb26a87e7419a1f7400c8e72f61ed16f75e775f313c5d55a289eab5c3",
+				"dweb:/ipfs/QmR7yGZ85pV9RLS31NSpp2z3ADFh7iq4gD7mWGU3NsCPy2"
+			]
+		}
+	},
+	"version": 1
+}

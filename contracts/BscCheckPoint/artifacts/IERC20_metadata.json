@@ -1,0 +1,150 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BscCheckPoint/BscBJLToken.sol": "IERC20"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BscCheckPoint/BscBJLToken.sol": {
+			"keccak256": "0x2e1bbf98727bf6271637523797c60ac9cd7ec788513d64d6576d73591a6f0dfd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8f3c37b4e632cd8a60c82a4177cfd19e5aed5b3bcf5d8ee8ca8efb537d8e1cff",
+				"dweb:/ipfs/QmadCqq2ezXSXNHsCB1yuewtbcLMfjr2UQwXHsgitstGh7"
+			]
+		},
+		"StringUtils.sol": {
+			"keccak256": "0x4aa0a26fd267e3a3f9806dd5c7dbb2b545f33d7038bbd0a59906d9c00a49135f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21b57cfeb26a87e7419a1f7400c8e72f61ed16f75e775f313c5d55a289eab5c3",
+				"dweb:/ipfs/QmR7yGZ85pV9RLS31NSpp2z3ADFh7iq4gD7mWGU3NsCPy2"
+			]
+		}
+	},
+	"version": 1
+}
