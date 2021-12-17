@@ -42,3 +42,7 @@ Cross-chain transfer of assets.
 
 Cross-chain payment.
  - Developers building decentralized applications will be able to make use of our solution to conduct cross-chain transactions, expanding their user base to other blockchains. Abstracting the conversion process from the user, the user only has to click the purchase button in the decentralized application.
+
+## `How to Use`
+
+User guides are in the folder labelled manuals, for both operators and users. Before any steps taken from the manuals, please deploy `CrossChainEthPoint.sol` and `CrossChainBscPoint.sol` to the respective blockchain networks with the operator account. Then, in `src\config\config.js`, update the addresses of the checkpoints as well as the arguments in `ethCoinTypeToBscMintedTokens.set()` and `bscMintedTokensToEthNativeTokens.set()`.
