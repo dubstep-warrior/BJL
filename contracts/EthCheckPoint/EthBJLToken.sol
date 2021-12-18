@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
-import "./../StringUtils.sol";
-
 interface IERC20 {
   function balanceOf(address owner) external view returns (uint);
   function approve(address spender, uint value) external returns (bool);
