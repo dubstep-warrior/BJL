@@ -25,7 +25,11 @@ A cross-chain bridge application that allows transfer of tokens between Ethereum
 
 With smart contracts on both the Ethereum Network and the Binance Smartchain, alongside a user interface in React, users will be able to transfer their tokens from one network to the other.
 
-The Web3JS API will also be used for various functionalities and reasons, mainly convenience.
+The Web3JS API will also be used as a backend interface between Ethereum and Binance.
+
+Kafka cluster to enhance fault tolerance in the backend API.
+
+![Alt text](assets/appDiagram.png?raw=true "App Diagram")
 
 ### `Features`
 
