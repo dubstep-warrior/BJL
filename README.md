@@ -2,7 +2,7 @@
 
 This project was created for the [Singapore Blockchain Innovation Challenge Hackathon](https://sbic2021.sbip.sg/)
 
-## Group Members:
+## Contributors:
 
  - Kok Bo Jin
  - Phan Vu Lan
